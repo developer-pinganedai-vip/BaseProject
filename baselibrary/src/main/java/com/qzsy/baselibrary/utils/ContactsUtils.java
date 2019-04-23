@@ -4,13 +4,12 @@ import android.content.Context;
 import android.database.Cursor;
 import android.provider.ContactsContract;
 
-import com.qzsy.insuranceloan.ui.authprocess.bean.DirectoriesBean;
 
 import java.util.HashSet;
 import java.util.Set;
 
 public class ContactsUtils {
-    private static final String[] PHONES_PROJECTION = new String[]{
+   /* private static final String[] PHONES_PROJECTION = new String[]{
             ContactsContract.Contacts.DISPLAY_NAME,
             ContactsContract.CommonDataKinds.Phone.NUMBER,
             ContactsContract.CommonDataKinds.Phone.HAS_PHONE_NUMBER};
@@ -58,5 +57,5 @@ public class ContactsUtils {
                 cursor.close();
             }
         }
-    }
+    }*/
 }

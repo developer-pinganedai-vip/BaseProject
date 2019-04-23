@@ -14,7 +14,8 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.qzsy.insuranceloan.BuildConfig;
+
+import com.qzsy.baselibrary.BuildConfig;
 
 import java.io.BufferedReader;
 import java.io.IOException;

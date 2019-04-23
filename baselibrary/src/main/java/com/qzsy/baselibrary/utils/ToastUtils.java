@@ -7,7 +7,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.qzsy.insuranceloan.app.AppApplication;
+import com.qzsy.baselibrary.application.MyApplication;
+
 
 /**
  * Created by fengpeihao on 2017/2/8.
@@ -31,7 +32,7 @@ public class ToastUtils {
      * @param strResId
      */
     public static void showShort(int strResId) {
-        showShort(AppApplication.getAppContext().getResources().getString(strResId));
+        showShort(MyApplication.getInstance().getResources().getString(strResId));
     }
 
     /**
@@ -49,15 +50,15 @@ public class ToastUtils {
      * @param strResId
      */
     public static void showLong(int strResId) {
-        showLong(AppApplication.getAppContext().getResources().getString(strResId));
+        showLong(MyApplication.getInstance().getResources().getString(strResId));
     }
 
 
-    private static void showToast(String msg,int duration){
+    private static void showToast(final String msg, final int duration){
         new Handler(Looper.getMainLooper()).post(new Runnable() {
             @Override
             public void run() {
-                Toast toast = Toast.makeText(AppApplication.getAppContext(), msg, duration);
+                Toast toast = Toast.makeText(MyApplication.getInstance(), msg, duration);
                 toast.setGravity(Gravity.CENTER,0,0);
                 LinearLayout linearLayout = (LinearLayout) toast.getView();
                 TextView messageTextView = (TextView) linearLayout.getChildAt(0);

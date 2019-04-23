@@ -3,7 +3,7 @@ package com.qzsy.baselibrary.utils;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.qzsy.insuranceloan.app.AppApplication;
+import com.qzsy.baselibrary.application.MyApplication;
 
 
 public class SPUtil {
@@ -12,7 +12,7 @@ public class SPUtil {
     private SPUtil(){}
 
     static {
-        spf = AppApplication.getInstance().getSharedPreferences("SpName", Context.MODE_PRIVATE);
+        spf = MyApplication.getInstance().getSharedPreferences("SpName", Context.MODE_PRIVATE);
     }
 
     /**

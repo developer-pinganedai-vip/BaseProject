@@ -3,7 +3,8 @@ package com.qzsy.baselibrary.utils;
 import android.app.Dialog;
 import android.content.DialogInterface;
 
-import com.qzsy.insuranceloan.widget.BaseDialog;
+
+import com.qzsy.baselibrary.ui.BaseDialog;
 
 import java.util.ArrayList;
 import java.util.HashMap;
