@@ -3,11 +3,12 @@ package com.qzsy.baselibrary.utils.prefs;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.qzsy.insuranceloan.app.AppApplication;
+import com.qzsy.baselibrary.application.MyApplication;
 
 import javax.inject.Inject;
 
-import static com.qzsy.insuranceloan.utils.prefs.SpConstants.SHAREDPREFERENCES_NAME;
+import static com.qzsy.baselibrary.utils.prefs.SpConstants.SHAREDPREFERENCES_NAME;
+
 
 /**
  * @author: Est <codeest.dev@gmail.com>
@@ -29,7 +30,7 @@ public class ImplPreferencesHelper implements PreferencesHelper {
 
     @Inject
     public ImplPreferencesHelper() {
-        mSPrefs = AppApplication.getInstance().getSharedPreferences(SHAREDPREFERENCES_NAME, Context.MODE_PRIVATE);
+        mSPrefs = MyApplication.getInstance().getSharedPreferences(SHAREDPREFERENCES_NAME, Context.MODE_PRIVATE);
     }
 
     public void clear() {

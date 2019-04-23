@@ -3,11 +3,12 @@ package com.qzsy.baselibrary.utils.prefs;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.qzsy.insuranceloan.app.AppApplication;
+import com.qzsy.baselibrary.application.MyApplication;
 
 import javax.inject.Inject;
 
-import static com.qzsy.insuranceloan.utils.prefs.SpConstants.NOCLEARSPHELPER_NAME;
+import static com.qzsy.baselibrary.utils.prefs.SpConstants.NOCLEARSPHELPER_NAME;
+
 
 /**
  * Created by fengpeihao on 2017/8/4.
@@ -18,7 +19,7 @@ public class NoClearSPHelper {
 
     @Inject
     public NoClearSPHelper() {
-        mSPrefs = AppApplication.getInstance().getSharedPreferences(NOCLEARSPHELPER_NAME, Context.MODE_PRIVATE);
+        mSPrefs = MyApplication.getInstance().getSharedPreferences(NOCLEARSPHELPER_NAME, Context.MODE_PRIVATE);
     }
 
     //存储用户手机号，用来判断用户是否是第一次上传设备信息

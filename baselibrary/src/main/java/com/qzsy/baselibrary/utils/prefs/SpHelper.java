@@ -3,16 +3,17 @@ package com.qzsy.baselibrary.utils.prefs;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.qzsy.insuranceloan.app.AppApplication;
+import com.qzsy.baselibrary.application.MyApplication;
 
 import javax.inject.Inject;
+
 
 public class SpHelper {
     private static SharedPreferences mSPrefs = null;
 
     @Inject
     public SpHelper() {
-        mSPrefs = AppApplication.getInstance().getSharedPreferences(AppApplication.getInstance().getPackageName(), Context.MODE_PRIVATE);
+        mSPrefs = MyApplication.getInstance().getSharedPreferences(MyApplication.getInstance().getPackageName(), Context.MODE_PRIVATE);
     }
 
     public void setBlackBox(String blackBox){
