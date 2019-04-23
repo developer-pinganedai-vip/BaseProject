@@ -710,7 +710,7 @@ public class AndroidUtil {
 
 
     public static void getServiceCall(final Context context, final String phone) {
-        final Dialog dialog = new Dialog(context, R.style.custom_dialog);
+        /*final Dialog dialog = new Dialog(context, R.style.custom_dialog);
         View view = LayoutInflater.from(context).inflate(R.layout.dialog_call_service, null);
         TextView tvTel = (TextView) view.findViewById(R.id.tv_tel);
         tvTel.setText(phone);
@@ -742,7 +742,7 @@ public class AndroidUtil {
         dialog.setContentView(view);
         dialog.setCancelable(true);
         dialog.setCanceledOnTouchOutside(true);
-        dialog.show();
+        dialog.show();*/
     }
 
     public static boolean checkAliPayInstalled(Context context) {
