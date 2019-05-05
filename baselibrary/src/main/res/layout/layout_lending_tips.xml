@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="220dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@mipmap/lending_tips_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:text="实际到账时间以银行通知为准，若超过5分钟未到账，尝试联系客服"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/white"/>
+</LinearLayout>

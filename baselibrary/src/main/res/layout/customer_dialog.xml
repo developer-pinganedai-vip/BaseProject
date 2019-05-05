@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_25"
+    android:background="@drawable/bg_corner_dialog">
+
+    <TextView
+        android:id="@+id/tv_customerDialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_18"
+        android:text="温馨提示"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_customerDialogContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/sp_15"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/tv_customerDialogConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="知道了"
+        android:gravity="center"
+        android:textSize="@dimen/sp_15"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/dp_25"
+        android:layout_gravity="center_horizontal"
+        android:background="@mipmap/bg_login_button"
+        />
+</LinearLayout>
